@@ -1,0 +1,103 @@
+:root {
+  --primary: #d81e5b;
+  --secondary: #8c38ff;
+  --dark: #131a26;
+  --light: #eee;
+  --yellow: rgb(209, 173, 13);
+  --mainBackground: rgb(131, 169, 218);
+  --incorrect: rgb(209, 4, 4);
+  --correct: rgb(54, 204, 8);
+  --buttonColor: rgb(0, 0, 0);
+  --buttonBackgroundColor: rgb(142, 138, 194);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  background-color: var(--light);
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.timmingPage {
+  width: 100%;
+  max-width: 800px;
+  background-color: #FFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
+  
+}
+
+.topBar {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  background-color: var(--dark);
+  color: yellow;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.difference {
+  color: yellow;
+  font-size: 30px;
+  font-weight: 300;
+  background-color: var(--dark);
+  padding: 16px;
+}
+
+.message {
+  font-size: 30px;
+  font-weight: 300;
+  background-color: var(--mainBackground);
+  color: var(--incorrect);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.controls {
+  font-size: 60px;
+  font-weight: 300;
+  background-color: var(--mainBackground);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.controls button{
+  flex: 1 1 33.33%;
+  max-width: 33.333%;
+  background-color: var(--buttonBackgroundColor);
+  color: var(--buttonColor);
+  font-weight: 700;
+  border-color: var(--dark);
+  box-shadow: 0px 5px 10px rgb(8, 8, 8);
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 10px;
+  border-radius: 80px;
+  padding: 20px;
+}
+
+button:hover {
+  opacity: 0.6;
+}
