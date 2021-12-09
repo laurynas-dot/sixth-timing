@@ -5,8 +5,8 @@
   --light: #eee;
   --yellow: rgb(209, 173, 13);
   --mainBackground: rgb(131, 169, 218);
-  --incorrect: rgb(209, 4, 4);
-  --correct: rgb(54, 204, 8);
+  --incorrect: rgb(128, 3, 3);
+  --correct: rgb(18, 75, 1);
   --buttonColor: rgb(0, 0, 0);
   --buttonBackgroundColor: rgb(142, 138, 194);
 }
@@ -49,22 +49,29 @@ body {
   font-weight: 300;
 }
 
-.difference {
+.topMinibar {
   color: yellow;
   font-size: 30px;
   font-weight: 300;
   background-color: var(--dark);
   padding: 16px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .message {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 300;
+  height: 200px;
   background-color: var(--mainBackground);
   color: var(--incorrect);
   padding: 16px;
   display: flex;
   justify-content: center;
+}
+
+.gameOverMessage {
+  font-size: 80px;
 }
 
 .controls {
@@ -102,11 +109,24 @@ button:hover {
   opacity: 0.6;
 }
 
-.fade-in {
+.fail-fade-in {
   transition: opacity 1s ease;
+  color: var(--incorrect);
 }
 
-.fade-out {
+.fail-fade-out {
   opacity: 0;
   transition: opacity 1s ease;
+  color: var(--incorrect);
+}
+
+.pass-fade-in {
+  transition: opacity 1s ease;
+  color: var(--correct);
+}
+
+.pass-fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+  color: var(--correct);
 }
