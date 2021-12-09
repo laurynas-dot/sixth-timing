@@ -62,12 +62,12 @@ class App extends Component {
           <span>Difference: 500ms</span>
         </div>
         <div className="message">
-          <span>Incorrect</span>
+          <span className="fade-in">Text</span>
         </div>
         <div className="controls">
-          <button>Rushing</button>
+          <button onClick={this.onRush}>Rushing</button>
           <button onClick={this.replay}>Replay</button>
-          <button>Draging</button>
+          <button onClick={this.onLag} >Draging</button>
         </div>
       </div>
     </div>
